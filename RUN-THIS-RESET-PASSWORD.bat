@@ -1,0 +1,3 @@
+@echo off
+echo Requesting Administrator access (click YES on the popup)...
+powershell -Command "Start-Process powershell -Verb RunAs -ArgumentList '-ExecutionPolicy Bypass -File ""C:\Users\spank\boostcafe-inventory-php\reset-mysql-password.ps1""'"

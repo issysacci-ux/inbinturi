@@ -1,0 +1,3 @@
+@echo off
+echo Requesting Administrator access (click YES on the popup)...
+powershell -Command "Start-Process powershell -Verb RunAs -ArgumentList '-ExecutionPolicy Bypass -Command ""Stop-Service MySQL80 -Force; Set-Service MySQL80 -StartupType Manual; Write-Host OLD MYSQL STOPPED - server can close this window; pause""'"
